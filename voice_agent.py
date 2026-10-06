@@ -9,7 +9,7 @@ import sounddevice as sd
 import websockets
 
 URL = "wss://api.us.poly.ai/v1/realtime"
-API_KEY = os.environ["DIALOGUE_API_KEY"]
+API_KEY = os.environ["DIALOG_API_KEY"]
 SAMPLE_RATE = 16000
 BLOCKSIZE = 512  # 512 samples @ 16kHz = 32ms, matching the detector's frame size
 
