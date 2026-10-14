@@ -8,12 +8,12 @@ lets the server detect turns, calls tools, and prints each reply as text.
 
 ## Run it
 
-You need Python 3.10 or later and a Dialog-RSN-1 API key.
+You need Python 3.10 or later and a Dialog-RSN-1 API key from [studio.poly.ai](https://studio.poly.ai): sign up or log in, then create one in the **API Keys** tab.
 
 ```bash
 python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env        # add your DIALOG_API_KEY
+cp .env.example .env        # add your POLY_API_KEY
 set -a && . ./.env && set +a
 
 python voice_agent.py                                    # open the mic and talk
@@ -29,7 +29,7 @@ tool calls before you try the microphone.
 |---|---|
 | `voice_agent.py` | The guide's full example, unchanged |
 | `requirements.txt` | `websockets>=14`, `sounddevice`, `numpy` |
-| `.env.example` | The one variable the script reads, `DIALOG_API_KEY` |
+| `.env.example` | The one variable the script reads, `POLY_API_KEY` |
 
 `websockets` 14 renamed `extra_headers` to `additional_headers`, so older versions fail at `connect()`.
 
