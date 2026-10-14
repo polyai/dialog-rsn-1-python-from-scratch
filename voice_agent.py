@@ -124,7 +124,10 @@ async def main():
                 },
             },
         }))
-        await ws.recv()  # session.updated
+        updated = json.loads(await ws.recv())
+        if updated["type"] != "session.updated":
+            # A refused update applies nothing, so the session would run on its defaults.
+            raise RuntimeError(updated["error"]["message"])
 
         if args.say:
             await send_text_turn(ws, args.say)
