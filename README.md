@@ -8,7 +8,7 @@ lets the server detect turns, calls tools, and prints each reply as text.
 
 ## Run it
 
-You need Python 3.10 or later and a Dialog-RSN-1 API key.
+You need Python 3.10 or later and a Dialog-RSN-1 API key from [studio.poly.ai](https://studio.poly.ai): sign up or log in, then create one in the **API Keys** tab.
 
 ```bash
 python3 -m venv .venv && . .venv/bin/activate
