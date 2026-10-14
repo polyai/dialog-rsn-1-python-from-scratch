@@ -118,7 +118,7 @@ async def main():
                 "tools": SESSION_TOOLS,
                 "audio": {
                     "input": {
-                        "format": {"type": "audio/pcm"},
+                        "format": {"type": "audio/pcm", "rate": SAMPLE_RATE},
                         "turn_detection": {"type": "server_vad", "create_response": True},
                     },
                 },
