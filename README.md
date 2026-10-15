@@ -1,10 +1,11 @@
 # Dialog-RSN-1 voice agent in Python
 
-The full example from [Build a voice agent from scratch with Python](https://dialog-rsn-1-eap-docs.pages.dev/dialog-rsn-1/guides/python-from-scratch/).
+The full example from [Build a voice agent from scratch with Python](https://docs.poly.ai/dialog-rsn-1/guides/python-from-scratch).
 The guide explains every part of it. This repo is the finished file, ready to run.
 
 A terminal voice agent on the standard `websockets` package, with no SDK. It streams microphone audio in,
-lets the server detect turns, calls tools, and prints each reply as text.
+lets the server detect turns, calls tools, and prints each reply as text. It asks for text replies with
+`output_modalities: ["text"]`. By default the API speaks each reply instead.
 
 ## Run it
 
@@ -35,8 +36,8 @@ tool calls before you try the microphone.
 
 ## Related
 
-- [Dialog-RSN-1 quickstart](https://dialog-rsn-1-eap-docs.pages.dev/dialog-rsn-1/quickstart/)
-- [Dialog-RSN-1 reference](https://dialog-rsn-1-eap-docs.pages.dev/dialog-rsn-1/reference/)
+- [Dialog-RSN-1 quickstart](https://docs.poly.ai/dialog-rsn-1/quickstart)
+- [Dialog-RSN-1 reference](https://docs.poly.ai/dialog-rsn-1/reference)
 - [Browser version of this agent](https://github.com/polyai/dialog-rsn-1-javascript-browser)
 
 ## License
